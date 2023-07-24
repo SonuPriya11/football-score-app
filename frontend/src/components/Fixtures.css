@@ -1,0 +1,219 @@
+body {
+    background-color: #212121;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ffffff;
+    margin: 1rem;
+    background-color: #323232;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .matchPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    background-color: #3e3e3e;
+    color: #ffffff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 90%;
+  }
+  
+  .topContainer
+   {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  
+  .topContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12vh;
+  }
+  
+  .topContainerLeft,
+  .topContainerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    padding-bottom: 0.5rem;
+  }
+  
+  .middleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .middleContainerLeft,
+  .middleContainerRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    padding: 1rem;
+  }
+  
+  .middleContainerCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34%;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .midddleContainerCenterTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+  }
+  
+  .middleContainerCenterBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+  }
+  
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #ffffff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45vh;
+  }
+  
+  .pageNumbersList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top: 1rem;
+  }
+  
+  .notActive,
+  .active {
+    margin: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .notActive:hover,
+  .active:hover {
+    margin: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #444444;
+    transition: background-color 0.3s ease;
+  }
+  
+  .active {
+    font-weight: bold;
+  }
+  
+  .countryFlag {
+    width: 30px;
+    height: 20px;
+    margin-left: 0.5rem;
+  }
+  
+  .container1 > h1 {
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .pageNumbersList > button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .prevBtnDisabled,
+  .nextBtnDisabled {
+    color: #888888;
+    cursor: not-allowed;
+  }
+  
+  .pageDisplay {
+    margin: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Media Queries */
+  
+  @media screen and (max-width: 768px) {
+    .container1 {
+      margin: 0;
+      padding: 0.5rem;
+    }
+  
+    .matchPanel {
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+    
+    .topContainer {
+      height: auto;
+      flex-wrap: wrap;
+    }
+  
+    .topContainerLeft,
+    .topContainerRight {
+      width: 100%;
+      padding-bottom: 0;
+      margin-bottom: 0.5rem;
+    }
+  
+    .middleContainerLeft,
+    .middleContainerCenter,
+    .middleContainerRight {
+      width: 100%;
+      margin: 0;
+      padding: 0.5rem;
+    }
+  
+    .middleContainer {
+      flex-direction: column;
+    }
+  
+    .midddleContainerCenterTop {
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
